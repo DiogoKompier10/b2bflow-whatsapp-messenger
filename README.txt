@@ -24,31 +24,21 @@ Antes de executar o script, certifique-se de ter o seguinte:
 Siga os passos abaixo para configurar o ambiente e instalar as dependências:
 
 1.  Clone o repositório:
-    ```bash
     git clone https://github.com/seu-usuario/seu-repositorio.git
     cd seu-repositorio
-    ```
     (Se você não está usando Git, apenas baixe os arquivos e navegue até a pasta do projeto.)
 
 2.  Crie um ambiente virtual (recomendado):
-    ```bash
     python -m venv venv
-    ```
 
 3.  Ative o ambiente virtual:
     *   Windows:
-        ```bash
         .\venv\Scripts\activate
-        ```
     *   macOS/Linux:
-        ```bash
         source venv/bin/activate
-        ```
 
 4.  Instale as dependências:
-    ```bash
     pip install python-dotenv supabase-py requests
-    ```
 
 ## Configuração
 
@@ -58,7 +48,6 @@ Para que o script funcione corretamente, você precisará configurar suas creden
 
 2.  Adicione as seguintes variáveis ao arquivo `.env`, substituindo os valores pelos seus dados reais:
 
-    ```dotenv
     # Supabase Credentials
     SUPABASE_URL="https://your-project-id.supabase.co"
     SUPABASE_KEY="your-anon-public-key-from-supabase"
@@ -67,7 +56,6 @@ Para que o script funcione corretamente, você precisará configurar suas creden
     ZAPI_INSTANCE_ID="YOUR_ZAPI_INSTANCE_ID"
     ZAPI_TOKEN="YOUR_ZAPI_INSTANCE_TOKEN"
     ZAPI_CLIENT_TOKEN="YOUR_ZAPI_GLOBAL_CLIENT_TOKEN"
-    ```
 
     *   SUPABASE_URL e SUPABASE_KEY: Encontradas no painel do seu projeto Supabase, em `Settings` > `API`. Use a `anon public` key.
     *   ZAPI_INSTANCE_ID e ZAPI_TOKEN: Encontradas no painel da sua instância na Z-API.
@@ -88,5 +76,4 @@ O Supabase possui RLS ativado por padrão, o que pode impedir que seu script lei
 
 Com as dependências instaladas e o arquivo `.env` configurado, você pode executar o script:
 
-```bash
 python main.py
