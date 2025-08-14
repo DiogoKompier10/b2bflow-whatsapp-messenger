@@ -1,4 +1,4 @@
-# b2bFlow WhatsApp Messenger
+# b2bflow WhatsApp Messenger
 
 Este projeto consiste em um script Python que automatiza o envio de mensagens personalizadas via WhatsApp. Ele busca dados de contatos em um banco de dados Supabase e utiliza a Z-API para disparar as mensagens.
 
